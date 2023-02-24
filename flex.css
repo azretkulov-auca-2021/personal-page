@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: url(https://bit.ly/hw4adis); */
+    opacity: .5;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    gap: 18px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.box1 {
+    flex-basis: 1400px;
+    height: 200px;
+}
+
+.box2 {
+    height: 200px;
+    flex-basis: 235px;
+}
+
+.box3 {
+    height: 200px;
+    flex-basis: 565px;
+}
+
+.box4 {
+    height: 200px;
+    flex-basis: 564px ;
+}
+
+.box5 {
+    height: 200px;
+    flex-basis: 1111px;
+}
+
+.box6 {
+    height: 200px;
+    flex-basis: 271px;
+}
+.container>* {
+    background-color: lightblue;
+    font-size: 10rem;
+    color: blue;
+    border: 2px dashed blue;
+}
