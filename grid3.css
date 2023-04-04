@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
+img:nth-of-type(1) {
+    display: none;
+}
+
 body {
     /* background-image: url(https://cdn.imgchest.com/files/wye3cd5ej4b.png); */
+    background-image: none;
     background-repeat: no-repeat;
     max-width: 1282px;
     min-height: 1434px;
     font-size: 2rem;
-    opacity: .5;
+    opacity: 1;
     color: blue;
 }
-/* - - - new class for assignment 8 - - - */
-img:nth-of-type(1) {
-    display: none;
-}
-/*- - - - - - - - - - - - - - - - - - - - */
 
 .container>* {
     border: 2px dashed blue;
@@ -25,10 +26,10 @@ img:nth-of-type(1) {
 
 .container {
     display: grid;
-    grid-template-rows: 250px 75px 710px 393px;
+    grid-template-rows: 75px 500px 710px 393px;
     grid-template-areas:
         "one one one"
-        "two five six"
+        "five two six"
         "three three three"
         "four four four";
     grid-template-columns: 241px 795px 243px;
@@ -55,9 +56,14 @@ img:nth-of-type(1) {
     display: flex;
 }
 
-.box5 > ul {
+.box5>ul {
     /* Roboto
     SIZE: 13PX / WEIGHT: 700 / STYLE: NORMAL     */
+    flex-direction: column;
+    text-transform: uppercase;
+
+    /* - - - this is the new - - - */
+
     font-family: 'Roboto';
     font-size: 13px;
     font-weight: 700;
@@ -77,31 +83,40 @@ img:nth-of-type(1) {
     opacity: 0.3;
 }
 
+li {
+    padding-top: 60px;
+    margin-left: 60px;
+    border-bottom: 1px solid #242424
+}
 .box6 {
     grid-area: six;
 }
 
-.allnews {
-    padding-left: 111px;
-    flex-basis: 237px;
+/* .allnews {
+    flex-basis: 237px; 
+    padding-top: 10px; 
 }
 
 .specproj {
-    padding-left: 82px;
-    flex-basis: 20px;
+     padding-left: 82px;
+    flex-basis: 20px; 
+    padding-top: 10px;
 }
 
 .call {
-    flex-basis: 20px;
-    padding-left: 20px;
+     flex-basis: 20px;
+    padding-left: 20px; 
+    padding-top: 10px;
 }
 
 .useful {
-    flex-basis: 20px;
+    /flex-basis: 20px;
     padding-left: 55px;
-}
+    padding-top: 10px;
+} 
 
 .stories {
-    flex-basis: 20px;
-    padding-left: 20px;
-}
+     flex-basis: 20px;
+    padding-left: 20px; 
+    padding-top: 10px;
+} */
