@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body > img:nth-of-type(1) {
+    display: none;
+}
+
+body {
+    /* background-image: url(https://cdn.imgchest.com/files/wye3cd5ej4b.png); */
+    background-image: none;
+    background-repeat: no-repeat;
+    max-width: 1282px;
+    min-height: 1434px;
+    font-size: 2rem;
+    opacity: 1;
+    color: blue;
+}
+
+.container>* {
+    border: 2px dashed blue;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 75px 500px 160px 80px 400px;
+    grid-template-areas:
+        "one one one"
+        "five two two"
+        "three six six"
+        "three none none "
+        "three four four";
+    grid-template-columns: 241px 795px 243px;
+
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.box1 {
+    grid-area: one;
+}
+
+.box2 {
+    grid-area: two;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: linear-gradient(white, black, green);
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+    display: flex;
+}
+
+.box5>ul {
+    /* Roboto
+    SIZE: 13PX / WEIGHT: 700 / STYLE: NORMAL     */
+    flex-direction: column;
+    text-transform: uppercase;
+
+    /* - - - this is the new - - - */
+
+    font-family: 'Roboto';
+    font-size: 13px;
+    font-weight: 700;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+    background-color: #ffffff;
+    color: #242424;
+
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+
+    opacity: 0.3;
+}
+
+li {
+    padding-top: 60px;
+    margin-left: 60px;
+    border-bottom: 1px solid #242424
+}
+.box6 {
+    grid-area: six;
+}
+
+/* .allnews {
+    flex-basis: 237px; 
+    padding-top: 10px; 
+}
+
+.specproj {
+     padding-left: 82px;
+    flex-basis: 20px; 
+    padding-top: 10px;
+}
+
+.call {
+     flex-basis: 20px;
+    padding-left: 20px; 
+    padding-top: 10px;
+}
+
+.useful {
+    /flex-basis: 20px;
+    padding-left: 55px;
+    padding-top: 10px;
+} 
+
+.stories {
+     flex-basis: 20px;
+    padding-left: 20px; 
+    padding-top: 10px;
+} */
