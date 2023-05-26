@@ -108,9 +108,26 @@ body {
     opacity: 0.3;
 }
 
+/* box 6 icon and KG */
 .box6 {
     grid-area: six;
+    display: flex;
 }
+
+div.fa {
+    font-size: 22px;
+    padding-top: 26px;
+    padding-left: 130px;
+  }
+  div.fa-search {
+    color: green;
+  }
+  h6 {
+    padding-top: 26px;
+    padding-left: 16px;
+    color: black;
+  }
+/* - - - - - - - - - - */
 
 .allnews {
     padding-left: 111px;
