@@ -5,12 +5,12 @@
 }
 
 body {
-    background-image: url(https://cdn.imgchest.com/files/wye3cd5ej4b.png);
+    /* background-image: url(https://cdn.imgchest.com/files/wye3cd5ej4b.png); */
     background-repeat: no-repeat;
     max-width: 1282px;
     min-height: 1434px;
     font-size: 2rem;
-    opacity: .5;
+    /* opacity: .5; */
     color: blue;
 }
 /* img:nth-of-type(1) {
@@ -18,7 +18,7 @@ body {
 } */
 
 .container>* {
-    border: 2px dashed blue;
+    border: 1px solid black;
 }
 
 .container {
@@ -173,3 +173,40 @@ div.fa {
     flex-basis: 20px;
     padding-left: 20px;
 }
+
+/*   responsive design   */
+
+.buttonMenu {
+    display: none;
+   } 
+
+/* @media (max-width: 500px) {
+
+    .buttonMenu {
+        display: block;
+        position: fixed; 
+        top: 10px; 
+        right: 0; 
+        }
+
+        .box2 {
+            display: none;
+            }
+            .box2.mobileMenu {
+            display: block;
+            position: fixed; 
+            top: 50px; 
+            right: 0; 
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 220px 1fr;
+        grid-template-areas:
+            "one one one"
+            "two five six"
+            "three three three"
+            "four four four";
+    }
+} */
