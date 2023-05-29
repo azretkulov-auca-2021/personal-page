@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="grid2c.css" class="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&display=swap');
+        </style>
+</head>
+
+<body>
+    <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
+    
+    <!-- <img src='https://cdn.imgchest.com/files/w7pjcwjz37p.png' style='position: absolute; top:0; left:0;z-index:-1'> -->
+    <div class="container">
+        <div class="box1"> </div>
+        <div class="box2">
+            <img src="https://kaktus.media/src/Template/Block/Header/img/logo-hover.svg?mtime=1613710204" alt="kaktus-logo">
+        </div>
+
+        <div class="box3">
+            <div class="pic1">
+                <img src="https://data.kaktus.media/image/big/2023-05-26_00-14-50_478111.jpg" alt="news1" class="picture1">
+                <p class="descr1">"Живите в фундаменте сами". Депутат отчитал чиновников за недостроенные дома баткенцев</p>
+            </div>
+            <div class="pic2">
+                <img src="https://data.kaktus.media/image/big/2023-05-26_21-18-19_697678.jpg" alt="news2" class="picture1">
+                <p class="descr1">В Наццентре охраны материнства и детства скончался трехлетний ребенок</p>
+            </div>
+            <div class="pic3">
+                <img src="https://data.kaktus.media/image/big/2023-05-26_21-49-20_983194.jpg" alt="news3" class="picture1">
+                <p class="descr1">Азиза Абдирасулова прокомментировала свое задержание</p>
+            </div>
+            <div class="pic4">
+                <img src="https://data.kaktus.media/image/big/2023-05-26_22-19-58_263028.jpg" alt="news4" class="picture1">
+                <p class="descr1">Задержали председателя комитета политзаключенных Сапарбека Аргымбаева</p>
+            </div>
+            <div class="pic5">
+                <img src="https://data.kaktus.media/image/big/2023-05-28_16-46-04_838473.jpg" alt="news5" class="picture1">
+                <p class="descr1">Футбол с президентом. Садыр Жапаров стал лучшим бомбардиром</p>
+            </div>
+            <div class="pic6">
+                <img src="https://data.kaktus.media/image/big/2023-05-28_19-32-51_724908.jpg" alt="news6" class="picture1">
+                <p class="descr1">В приграничном селе Максат в Баткенской области установили 10-метровый флаг Кыргызстана</p>
+            </div>
+            <div class="pic7">
+                <img src="https://data.kaktus.media/image/big/2023-05-29_17-41-41_181633.jpg" alt="news7" class="picture1">
+                <p class="descr1">В мэрии показали, как будет выглядеть остановка на Абдрахманова - Киевской (эскизы)</p>
+            </div>
+            <dic class="pic8">
+                <img src="https://data.kaktus.media/image/big/2023-05-29_19-46-27_798590.jpg" alt="news8" class="picture1">
+                <p class="descr1">Глава МИД Жээнбек Кулубаев по приглашению прибыл в Монголию</p>
+            </dic>
+        </div>
+
+        <div class="box4"></div>
+        <div class="box5">
+            <ul class="bars">
+                <li class="allnews">ВСЕ НОВОСТИ</li>
+                <li class="specproj">СПЕЦПРОЕКТЫ</li>
+                <li class="call">CALL-ЦЕНТР</li>
+                <li class="useful">ПОЛЕЗНОЕ</li>
+                <li class="stories">ИСТОРИИ</li>
+            </ul>
+        </div>
+        <div class="box6">
+            <div class="fa fa-search"></div>
+            <h6>KG</h6>
+        </div>
+    </div>
+
+    <script>
+        function switchStyle() {
+        let style = document.querySelector('.style');
+        if (style.getAttribute('href') == 'grid4c.css') {
+        style.setAttribute('href', 'grid2c.css');
+        } else {
+        style.setAttribute('href', 'grid4c.css');
+        }
+        }
+        </script>
+</body>
+
+</html>
